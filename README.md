@@ -1,8 +1,8 @@
 # SubtitleForge
 
-**Local AI subtitle generator. No internet, no API key, no cloud. Runs entirely on your CPU.**
+**Local AI subtitle generator. Just choose your video and watch the magic unfold**
 
-Drop any video file onto the EXE and get a properly timed `.srt` subtitle file in seconds — the same folder as your video, same filename. Open it in VLC, Plex, or any media player.
+Open the exe app, choose your video, hit generate and get a properly timed `.srt` subtitle file in seconds — the same folder as your video, same filename. Open it in VLC, Plex, or any media player and Enjoy!
 
 ---
 
@@ -10,43 +10,7 @@ Drop any video file onto the EXE and get a properly timed `.srt` subtitle file i
 
 **[→ Download SubtitleForge_release.zip from Releases](../../releases/latest)**
 
-Extract the ZIP. Drag a video onto `SubtitleForge.exe`. That's it.
-
----
-
-## Demo
-
-**Input** — a raw MP4 file with no subtitles:
-
-```
-interview_clip.mp4
-```
-
-**Output** — `interview_clip.srt` generated automatically:
-
-```srt
-1
-00:00:01,240 --> 00:00:04,180
-The interesting thing about machine learning
-is how little data you actually need.
-
-2
-00:00:04,620 --> 00:00:07,900
-Most people assume you need millions of examples,
-but that's not always true.
-
-3
-00:00:08,350 --> 00:00:11,410
-With transfer learning, a few hundred
-labelled samples can be enough.
-
-4
-00:00:12,100 --> 00:00:15,760
-The real challenge is the quality
-of your labels, not the quantity.
-```
-
-Load the SRT in VLC: `Subtitle → Add Subtitle File` — the text appears in sync with the speech, properly line-broken, naturally timed.
+Extract the ZIP. Click on the exe, browse your video and select it and hit generate.
 
 ---
 
@@ -115,8 +79,3 @@ The bundled EXE is built with PyInstaller in one-directory mode. The model weigh
 
 The transcription pipeline uses Whisper's word-level timestamp mode (`word_timestamps=True`) rather than segment-level timestamps. This gives per-word timing information that the segmentation pass uses to construct subtitle blocks that align precisely with speech, rather than grouping by Whisper's internal segment boundaries which are often too long for subtitle display.
 
----
-
-## License
-
-MIT

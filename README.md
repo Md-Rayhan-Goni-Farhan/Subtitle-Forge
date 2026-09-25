@@ -1,7 +1,7 @@
 # SubtitleForge
 
 **Local AI subtitle generator. Just choose your video and watch the magic unfold**
-
+**NOTE: SUBTITLE FORGE WILL STRUGGLE IF YOUR VIDEO HAS DUAL AUDIO. AS LONG AS YOU HAVE ONE AUDIO TRACK ONLY, YOU'RE GOOD TO GO**
 Open the exe app, choose your video, hit generate and get a properly timed `.srt` subtitle file in seconds — the same folder as your video, same filename. Open it in VLC, Plex, or any media player and Enjoy!
 
 ---

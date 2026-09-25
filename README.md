@@ -64,7 +64,7 @@ The output follows broadcast subtitle conventions:
 If you want to build the EXE yourself:
 
 ```bash
-git clone https://github.com/yourusername/SubtitleForge
+git clone https://github.com/(whatever my username is at the time you clone it)/SubtitleForge
 cd SubtitleForge
 setup_dev.bat
 ```
